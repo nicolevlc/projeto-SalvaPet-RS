@@ -1,0 +1,107 @@
+header {
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 65px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+}
+
+.nav-logo img {
+  height: 60px;
+  margin-right: 10px;
+}
+
+.nav-logo h1 {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.nav-logo .salva {
+  color: #F57C00;
+}
+
+.nav-logo .pet {
+  color: #673AB7;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin-right: 32px;
+}
+
+.nav-links a {
+  position: relative;
+  text-decoration: none;
+  color: #333333;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+/* Animação de sublinhado embaixo dos links */
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #662FAE;
+  left: 50%;
+  bottom: -4px;
+  transition: width 0.3s ease, left 0.3s ease;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.nav-links a:hover {
+  color: #662FAE;
+}
+
+#adopt-button {
+  list-style: none;
+}
+
+#adopt-button a {
+  background-color: #FF834A;
+  color: #ffffff;
+  padding: 12px 50px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 700;
+  display: inline-block;
+  transition: background-color 0.4s ease, color 0.5s ease, border 0.5s ease, box-shadow 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#adopt-button a:hover {
+  transform: scale(1.05);
+}

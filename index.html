@@ -2,28 +2,34 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plataforma de Adoção e Reencontro de Animais</title>
     <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/global.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <div class="nav-logo">
-            <img src="assets/logo-salvapet.svg" alt="Imagem da Logo">
-            <h1><span class="salva">Salva</span><span class="pet">Pet</span> RS</h1>
+            <a href="index.html" class="logo-link">
+                <img src="assets/logo-salvapet.svg" alt="Imagem da Logo">
+                <h1><span class="salva">Salva</span><span class="pet">Pet</span> RS</h1>
+            </a>
         </div>
         <nav>
             <ul class="nav-links">
-                <li><a href="about.html">Sobre Nós</a></li>
-                <li><a href="help.html">Ajude</a></li>
-                <li><a href="rescued.html">Resgatados</a></li>
-                <li><a href="contact.html">Contato</a></li>
+                <li><a href="pages/about.html">Sobre Nós</a></li>
+                <li><a href="pages/help.html">Ajude</a></li>
+                <li><a href="pages/rescued.html">Resgatados</a></li>
+                <li><a href="pages/contact.html">Contato</a></li>
             </ul>
             <ul id="adopt-button">
-                <li><a href="adopt.html">Adote</a></li>
+                <li><a href="pages/adopt.html">Adotar</a></li>
             </ul>
         </nav>
-    </header>
+    </header>    
 
     <main>
         <section id="home">
@@ -36,14 +42,77 @@
 
             <a href="#pets-section"><button>Conheça nossos pets</button></a>
             <a href="pages/about.html"><button>Ver mais sobre o projeto</button></a>
-        </section>
-        <section id="pets-section">
 
+            <img src="assets/home-image.png" alt="">
+        </section>
+
+        <section id="pets-section">
+            <h2>Conheça alguns de nossos <span class="pets">pets</span> :)</h2>
+            <section class="pet-cards">
+                <div class="pet-card">
+                    <img src="assets/home-pet1.svg" alt="Foto de um cachorro chamado Thor, com pelagem marrom e branca">
+                    <div class="pet-info">
+                        <h3>Thor</h3>
+                        <img src="assets/icons/local-icon-sm.svg" alt="Ícone de localização">
+                        <p> Taquari</p>
+                        <p>Cachorro mais velho, 5 anos, calmo e gosta de companhia tranquila...</p>
+                        <a href="#">Ver mais</a>
+                    </div>
+                </div>
+                
+                <div class="pet-card">
+                    <img src="assets/home-pet2.svg" alt="Foto de uma gata chamada Luna com pelagem de cor preta">
+                    <div class="pet-info">
+                        <h3>Luna</h3>
+                        <img src="assets/icons/local-icon-sm.svg" alt="Ícone de localização">
+                        <p> Pelotas</p>
+                        <p>Gata fêmea, 2 anos, carinhosa e adora sonecas ao sol...</p>
+                        <a href="#">Ver mais</a>
+                    </div>
+                </div>
+
+                <div class="pet-card">
+                    <img src="assets/home-pet3.svg" alt="Foto do cãozinho chamado Buddy com pelagem marrom e branca">
+                    <div class="pet-info">
+                        <h3>Buddy</h3>
+                        <img src="assets/icons/local-icon-sm.svg" alt="Ícone de localização">
+                        <p> Porto Alegre</p>
+                        <p>Cãozinho resgatado, 5 meses, cheio de energia e adora brincar...</p>
+                        <a href="#">Ver mais</a>
+                    </div>
+                </div>
+
+                <div class="pet-card">
+                    <img src="assets/home-pet4.svg" alt="Foto de um gatinho chaamdo Oliver com pelagem laranja e branca">
+                    <div class="pet-info">
+                        <h3>Oliver</h3>
+                        <img src="assets/icons/local-icon-sm.svg" alt="Ícone de localização">
+                        <p> Pelotas</p>
+                        <p>Gatinho resgatado, aparenta ter uns 4 meses, curioso e brincalhão...</p>
+                        <a href="#">Ver mais</a>
+                    </div>
+                </div>
+
+                <div class="pet-card large">
+                    <img src="assets/home-pet5.svg" alt="Foto de uma cadela chamada Julie com pelagem de cor caramelo">
+                    <div class="pet-info">
+                        <h2>Julie</h2>
+                        <img src="assets/icons/local-icon-sm.svg" alt="Ícone de localização">
+                        <p> Pelotas</p>
+                        <p>Uma fêmea caramelo, com aproximadamente 2 anos, resgatada no Centro de Pelotas. Julie tem um brilho único no olhar e é leal e carinhosa...</p>
+                        <div class="actions">
+                            <a href="#" class="btn-adopt">Adotar</a>
+                            <a href="#">Ver mais</a>
+                            <img src="assets/icons/right-arrow-sm.svg" alt="Ícone de seta">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 SalvaPet RS. Todos os direitos reservados.<p>
+        <p>&copy; 2024 SalvaPet RS. Todos os direitos reservados.</p>
         <a href="privacy-policy.html">Política de Privacidade</a>
         <a href="terms-of-use.html">Termos de Uso</a>
     </footer>
